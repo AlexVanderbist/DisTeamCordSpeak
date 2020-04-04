@@ -3,6 +3,7 @@
     "@discordjs/opus": "^0.1.0",
     "bufferutil": "^4.0.1",
     "discord.js": "^12.1.1",
+    "dotenv": "^8.2.0",
     "ffmpeg-static": "^4.0.1",
     "utf-8-validate": "^5.0.2"
   },
