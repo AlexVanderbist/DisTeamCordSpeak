@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@discordjs/opus": "^0.1.0",
+    "bufferutil": "^4.0.1",
+    "discord.js": "^12.1.1",
+    "ffmpeg-static": "^4.0.1",
+    "utf-8-validate": "^5.0.2"
+  },
+  "name": "disteamcordspeak",
+  "version": "1.0.0",
+  "description": "TeamSpeak notifications for Discord",
+  "main": "index.js",
+  "repository": "git@github.com:alexvanderbist/DisTeamCordSpeak.git",
+  "author": "Alex Vanderbist <alex.vanderbist@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
