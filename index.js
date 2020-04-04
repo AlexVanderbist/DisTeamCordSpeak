@@ -23,7 +23,7 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
   }
 })
 
-client.login('Njg1OTIzNTg4ODg0NTI5MTYx.XoebeA.587osr79rKYySWagWcnQcUKyOx4');
+client.login('TOKEN');
 
 async function play(channel, file)
 {
