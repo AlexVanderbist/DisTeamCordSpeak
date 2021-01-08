@@ -10,17 +10,20 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
   if (oldState.channel !== newState.channel) {
     if (oldState.channel && oldState.channel.name === 'General') {
       play(oldState.channel, './sounds/disconnected.wav');
+      console.log(`Joined ${oldState.channel.name} for ${oldState.member.user.tag} leaving.`);
     }
 
     if (newState.channel && newState.channel.name === 'General') {
       const havingAGoodTime = Math.random() <= 0.05;
       const file = havingAGoodTime ? './sounds/connected-but-its-loud-af.mp3' : './sounds/connected.wav';
       play(newState.channel, file);
+      console.log(`Joined ${newState.channel.name} for ${newState.member.user.tag} joining.`);
     }
   }
 
   if (oldState.selfDeaf && !newState.selfDeaf) {
     play(oldState.channel, './sounds/talkpower_granted.wav');
+    console.log(`Joined ${oldState.channel.name} for ${oldState.member.user.tag} Undeafen.`);
   }
 })
 
